@@ -1,0 +1,201 @@
+/* General Layout Fixes */
+body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center text section */
+.text-center {
+    background-color: cadetblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+svg{
+    padding-bottom: 20px;
+}
+
+/* Specific Div Fixes */
+.first-div {
+    margin-top: 120px;
+}
+
+.second-div {
+    width: 300px;
+    margin: 0 auto; /* This will center the image */
+}
+
+.img1 {
+    width: 100%; /* Ensure the image takes up the div's full width */
+    height: auto;
+}
+
+.third-div {
+    margin-top: 100px;
+}
+
+.fourth-div {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: cadetblue;
+}
+
+.fifth-div {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.img2 {
+    width: 50%; /* Adjust to make the image responsive */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.sixth-div {
+    margin-top: 70px;
+}
+
+.seventh-div {
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; /* Limit width for better readability */
+}
+
+.eighth-div {
+    margin-top: 100px;
+}
+
+.img3 {
+    width: 50%; /* Adjust to make the image responsive */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.ninth-div {
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.tenth-div {
+    position: absolute;
+    margin-top: 16%;
+    height: 100vh;
+    position: relative;
+}
+
+.eleventh-div {
+    padding-top: 20px;
+    height: fit-content;
+    text-align: center;
+}
+
+/* Button Style */
+.btn-secondary {
+    margin-top: 40px;
+    background-color: cadetblue;
+    color: white;
+}
+
+/* Bottom Section */
+.bottom-container {
+    width: 100%;
+    height: 200px;
+    margin-top: auto;
+    text-align: center;
+    align-content: center;
+    background-color: cadetblue;
+    position: absolute;
+    bottom: 0;
+
+}
+.btn-primary{
+    height: 50px;
+    width: 170px;
+}
+a {
+    margin: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.copyright {
+    padding-top: 20px;
+}
+.para{
+    padding-top: 20px;
+}
+.flex-container{
+    display: inline-flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    gap: 70px;
+    font-size: xx-large;
+}
+.Email{
+    background-color: cadetblue;
+    color: white;
+}
+.name{
+    background-color: cadetblue;
+    color: white;
+}
+.Address{
+    background-color: cadetblue;
+    color: white;
+}
+.Tel{
+    background-color: cadetblue;
+    color: white;
+}
+
+/* Ensure proper centering for small screens */
+@media (max-width: 768px) {
+    .para{
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .header {
+        flex-direction: column; /* Stack header items */
+        padding: 20px;
+    }
+
+    .nav {
+        flex-direction: column; /* Stack nav links */
+        gap: 20px;
+    }
+
+    .second-div, .img1, .img2, .img3 {
+        width: 80%; /* Ensure images scale properly on small screens */
+        margin: 0 auto;
+    }
+
+    .seventh-div, .ninth-div {
+        max-width: 100%; /* Allow text to take full width */
+    }
+    .hobbies {
+        font-size: 40px;  /* Make the title bigger for mobile */
+    }
+    ol {
+        font-size: 24px;  /* Make the list font size bigger for mobile */
+    }
+    li {
+        margin: 15px 0;  /* Increase margin between list items */
+    }
+}
